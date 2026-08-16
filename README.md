@@ -3,6 +3,11 @@
 Turn your notes into a quiz. Upload or point it at `.md` / `.txt` / `.pdf`
 notes; it generates questions, asks you, grades you, and shows what to review.
 
+**It never hard-fails on a missing API key.** With a Gemini key you get real
+comprehension questions, each with an explanation and a verbatim source snippet
+from your notes. Without one, a rule-based generator takes over and the app keeps
+working — offline, free, and fully private. No key, no quota, no crash.
+
 Two ways to use it:
 - **Web app** (`app.py`) — Streamlit UI, runs locally or deploys to the cloud.
 - **Terminal** (`quiz_agent.py`) — CLI that quizzes you on a folder of notes.
@@ -67,4 +72,6 @@ requirements.txt   Dependencies
 DEPLOY.md          Streamlit Cloud deploy guide
 ```
 
-This is a standalone side project — independent of any other repo.
+## License
+
+MIT — see [LICENSE](LICENSE).
